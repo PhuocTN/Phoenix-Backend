@@ -5,7 +5,7 @@ const users = require('../data/users');
 var router = express.Router();
 
 passport.use(new LocalStrategy(function verify(email, password, callback) {
-  const loggedInUser = users.find(u => u.email === email && u.password === password);
+  const loggedInUser = users.find(u => u.email == email && u.password == password);
   console.log(loggedInUser, email, password);
     if(!loggedInUser)
     {
@@ -18,20 +18,21 @@ passport.use(new LocalStrategy(function verify(email, password, callback) {
     console.log('Chạy được ko?');
 }));
 
-// router.post('/login', passport.authenticate('local', {
-//   successRedirect: '/landingPage',
-//   failureRedirect: '/'
-// }));
-
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/landingPage',
   failureRedirect: '/'
 }));
 
-
 router.post('/logout', function(req, res, next) {
   req.logout();
   res.redirect('/');
 });
+
+
+// router.post('/login',
+//   passport.authenticate('local', { failureRedirect: '/', failureMessage: true }),
+//   function(req, res) {
+//     res.redirect('/landingPage');
+// });
 
 module.exports = router;
