@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <!-- Theme Font -->
+    <link
+      rel="preload"
+      type="text/css"
+      href="css/theme-font.min.css"
+      as="style"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+
+    <!-- Main Styles CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+
+    <!-- Main RTL CSS -->
+    <!--<link rel="stylesheet" type="text/css" href="css/rtl.min.css">-->
+  </head>
+
+  <body class="landing-page">
+    <!-- Preloader -->
+
+    <div id="hellopreloader">
+      <div class="preloader">
+        <svg width="45" height="45" stroke="#fff">
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke-width="2"
+            transform="translate(1 1)"
+          >
+            <circle cx="22" cy="22" r="6" stroke="none">
+              <animate
+                attributeName="r"
+                begin="1.5s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="6;22"
+              />
+              <animate
+                attributeName="stroke-opacity"
+                begin="1.5s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="1;0"
+              />
+              <animate
+                attributeName="stroke-width"
+                begin="1.5s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="2;0"
+              />
+            </circle>
+            <circle cx="22" cy="22" r="6" stroke="none">
+              <animate
+                attributeName="r"
+                begin="3s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="6;22"
+              />
+              <animate
+                attributeName="stroke-opacity"
+                begin="3s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="1;0"
+              />
+              <animate
+                attributeName="stroke-width"
+                begin="3s"
+                calcMode="linear"
+                dur="3s"
+                repeatCount="indefinite"
+                values="2;0"
+              />
+            </circle>
+            <circle cx="22" cy="22" r="8">
+              <animate
+                attributeName="r"
+                begin="0s"
+                calcMode="linear"
+                dur="1.5s"
+                repeatCount="indefinite"
+                values="6;1;2;3;4;5;6"
+              />
+            </circle>
+          </g>
+        </svg>
+
+        <div class="text">Loading ...</div>
+      </div>
+    </div>
+
+    <!-- ... end Preloader -->
+    <div class="content-bg-wrap"></div>
+
+    <!-- Header Standard Landing  -->
+
+       <!-- ... end Header Standard Landing  -->
+    <div class="header-spacer--standard"></div>
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-4">
+              <div class="card-body p-md-5 mx-md-4" style="color:aliceblue">
+
+                <div class="text-center">
+                  <img src="img/logo.webp"
+                    style="width: 185px;" alt="logo">
+                  <h1 class="mt-1 mb-5 pb-1" style="color:#ffffff">Chào mừng đến <b>CCOM</b></h1>
+                  <h4 class="mt-1 mb-5 pb-1" style="color:#ffffff"><b><i>Mang crypto đến cộng đồng Việt</i></b></h4>
+                </div>
+
+                <form>
+                  <h4 style="color:#ffffff" class="text-center"><b>Đăng ký mới</b></h4>
+                  
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" style="color:#ffffff"
+                    placeholder="Họ Tên" />              
+                  </div>
+
+                  <div class="form-outline mb-4" style="border-color: #6236b2 border-radius 200px";>
+                    <input type="email" id="form2Example11" class="form-control font-size:14" style="color:#ffffff"
+                      placeholder="Email" /> 
+                    <span class="material-input" style="border-color: #6236b2"></span>    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" style="color:#ffffff"
+                    placeholder="Mật khẩu" />              
+                  </div>
+
+                                  
+                  <a href="#" class="btn btn-border full-width">Hoàn thành đăng ký</a>
+                  <!-- <div class="col-lg-4 align-items-center">
+                  <button type="button" class="btn btn-primary" style="padding-left: 2.5rem; padding-right: 2.5rem;" data-dashlane-rid="dccc7fc0de63a79a" data-form-type="action,login" data-dashlane-label="true">Đăng nhập</button>
+                  </div> -->
+                  <!-- <div class="col-lg-4 align-items-center">
+                  <button type="button" class="btn btn-primary" style="padding-left: 2.5rem; padding-right: 2.5rem;" data-dashlane-rid="dccc7fc0de63a79a" data-form-type="action,login" data-dashlane-label="true">Tạo mới</button>
+                  <!-- <a href="#" class="btn btn-outline-danger full-width">Tạo mới</a> -->
+                  </div> -->
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+    </div>
+
+    <!-- Window-popup Restore Password -->
+
+    <div
+      class="modal fade"
+      id="restore-password"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="restore-password"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog window-popup restore-password-popup"
+        role="document"
+      >
+        <div class="modal-content">
+          <a
+            href="#"
+            class="close icon-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg class="olymp-close-icon">
+              <use xlink:href="#olymp-close-icon"></use>
+            </svg>
+          </a>
+
+          <div class="modal-header">
+            <h6 class="title">Restore your Password</h6>
+          </div>
+
+          <div class="modal-body">
+            <form method="get">
+              <p>
+                Enter your email and click the send code button. You’ll receive
+                a code in your email. Please use that code below to change the
+                old password for a new one.
+              </p>
+              <div class="form-group label-floating">
+                <label class="control-label">Email của bạn</label>
+                <input
+                  class="form-control"
+                  placeholder=""
+                  type="email"
+                  value="james-spiegel@yourmail.com"
+                />
+              </div>
+              <button class="btn btn-purple btn-lg full-width">
+                Send me the Code
+              </button>
+              <div class="form-group label-floating">
+                <label class="control-label">Enter the Code</label>
+                <input
+                  class="form-control"
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Your New Password</label>
+                <input
+                  class="form-control"
+                  placeholder=""
+                  type="password"
+                  value="olympus"
+                />
+              </div>
+              <button class="btn btn-primary btn-lg full-width">
+                Change your Password!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ... end Window-popup Restore Password -->
+
+    <!-- Window Popup Main Search -->
+
+    <div
+      class="modal fade"
+      id="main-popup-search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="main-popup-search"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered window-popup main-popup-search"
+        role="document"
+      >
+        <div class="modal-content">
+          <a
+            href="#"
+            class="close icon-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg class="olymp-close-icon">
+              <use xlink:href="#olymp-close-icon"></use>
+            </svg>
+          </a>
+          <div class="modal-body">
+            <form class="form-inline search-form" method="post">
+              <div class="form-group label-floating">
+                <label class="control-label">What are you looking for?</label>
+                <input
+                  class="form-control bg-white"
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </div>
+
+              <button class="btn btn-purple btn-lg">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ... end Window Popup Main Search -->
+
+    <!-- JS Scripts -->
+    <script src="js/jQuery/jquery-3.5.1.min.js"></script>
+
+    <script src="js/libs/jquery.mousewheel.min.js"></script>
+    <script src="js/libs/perfect-scrollbar.min.js"></script>
+    <script src="js/libs/imagesloaded.pkgd.min.js"></script>
+    <script src="js/libs/material.min.js"></script>
+    <script src="js/libs/selectize.min.js"></script>
+    <script src="js/libs/moment.min.js"></script>
+    <script src="js/libs/daterangepicker.min.js"></script>
+    <script src="js/libs/isotope.pkgd.min.js"></script>
+    <script src="js/libs/ajax-pagination.min.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/libs-init/libs-init.js"></script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SVG icons loader -->
+    <script src="js/svg-loader.js"></script>
+    <!-- /SVG icons loader -->
+  </body>
+</html>
